@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="w-screen bg-indigo-50 p-8 md:pl-2 md:pr-2 md:flex md:relative">
+    <section class="w-full flex flex-col md:w-48 md:sticky top-0">
+        <div class="flex">
+            <img class="w-8 object-fit" src="logo.png" alt="logo" />
+            <h1 class="text-3xl ml-3">Team</h1>
+        </div>
+        <p class="text-gray-300">----------------</p>
+        <div class="flex flex w-32 place-items-center p-3 cursor-pointer rounded-xl hover:text-indigo-500 hover:shadow-xl hover:bg-blue-200 ease-in duration-200 transform hover:translate-x-3">
+            <i class="fas fa-home"></i>
+            <h1 class="ml-3 cursor">Home</h1>
+        </div>
+        <div class="flex flex w-32 place-items-center p-3 cursor-pointer rounded-xl hover:text-red-500 hover:shadow-xl hover:bg-blue-200 ease-in duration-200 transform hover:translate-x-3">
+            <i class="fas fa-tasks"></i>
+            <h1 class="ml-3">My Tasks</h1>
+        </div>
+        <div class="flex flex w-32 place-items-center p-3 cursor-pointer rounded-xl hover:text-green-500 hover:shadow-xl hover:bg-blue-200 ease-in duration-200 transform hover:translate-x-3">
+            <i class="fas fa-trophy"></i>
+            <h1 class="ml-3">Goals</h1>
+        </div>
+        <div class="flex flex w-32 place-items-center p-3 cursor-pointer rounded-xl hover:text-yellow-600 hover:shadow-xl hover:bg-blue-200 ease-in duration-200 transform hover:translate-x-3">
+            <i class="fas fa-users"></i>
+            <h1 class="ml-3">Members</h1>
+        </div>
+        <p class="text-gray-300">----------------</p>
+        <h1 class="text-gray-500 mt-2 mb-2">Workspace</h1>
+        <div class="flex place-items-center mt-2 mb-2">
+            <div class="w-2 h-2 rounded-full bg-yellow-500 mr-3"></div>
+            <h1 class="font-bold">Goody's Design</h1>
+        </div>
+        <div class="flex place-items-center mt-2 mb-2">
+            <div class="w-2 h-2 rounded-full bg-blue-500 mr-3"></div>
+            <h1 class="font-bold">Website Design</h1>
+        </div>
+        <div class="flex place-items-center mt-2 mb-2">
+            <div class="w-2 h-2 rounded-full bg-green-500 mr-3"></div>
+            <h1 class="font-bold">Mobile Design</h1>
+        </div>
+        <div class="flex place-items-center mt-2 mb-2">
+            <div class="w-2 h-2 rounded-full bg-indigo-500 mr-3"></div>
+            <h1 class="font-bold">Other Design</h1>
+        </div>
+
+    </section>
+
+    <section class="w-full md:w-3/5 md:pr-8">
+        <!-- <div class="w-full p-3 bg-white rounded-xl mt-3">
+            <h1 class="task-title text-xl font-bold">Slack Integration</h1>
+            <p class="task-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, tempore quo.</p>
+            <div class="flex justify-between w-full mt-3 mb-3 place-items-center">
+                <h1 class="tag p-1 bg-blue-100 text-blue-700 rounded-xl">Research</h1>
+                <div class="workers flex">
+                    <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                    <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                    <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                </div>
+            </div>
+            <div class="w-full flex place-items-center mt-3 mb-3">
+                <div class="w-4/6 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                </div>
+                <div class="flex justify-end w-2/6 text-lg text-indigo-200">
+                    <span class='fa fa-thumbs-up'></span>
+                </div>
+
+            </div>
+
+        </div> -->
+        <div class="flex flex-col space-y-2">
+            <p class="text-gray-500 italic">Workplace / Team Design / Dashboard</p>
+            <h1 class="text-5xl">Team Design</h1>
+            <div class="flex">
+                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="employee" /> 
+                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="employee" />
+                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="employee" />
+                <h2 class="w-6 h-6 border border-gray-300 rounded-full object-cover flex place-items-center justify-center text-gray-500 text-sm">+4</h2>
+            </div>
+        </div>
+        
+        <div class="md:flex md:flex-wrap">
+            <!-- this is where the magic happens -->
+            <% for(let i=0; i<info.length; i++) { %>
+                <div class="w-full p-3 bg-white rounded-xl mt-3 md:w-64 md:h-64 md:m-2 md:flex md:flex-col md:place-items-between md:shadow-xl">
+                    <h1 class="task-title text-xl font-bold">
+                        <%=  info[i].taskTitle %>
+                    </h1>
+                    <p class="task-description text-gray-400">
+                        <%=  info[i].taskDesc %>
+                    </p>
+                    
+                    <div class="flex justify-between w-full mt-3 mb-3 place-items-center">
+                        <h1 class="tag p-1 bg-blue-100 text-blue-700 rounded-xl task-type">
+                            <%= info[i].taskType %>
+                        </h1>
+                        <div class="workers flex">
+                            <% let empLen = info[i].employees.split(',').length %>
+                            <% for (let j=0; j<empLen; j++) {%>
+                                <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                                <% } %>
+                                
+                                <!-- <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="employee" />
+                                    <img class="w-6 h-6 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="employee" /> -->
+                                </div>
+                        </div>
+                        <div class="w-full flex place-items-center mt-3 mb-3">
+                            <!-- progress bar -->
+                            <div class="w-4/6 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                            <div class="flex justify-end w-2/6 text-lg text-indigo-200 space-x-2 relative">
+                                <span class="text-sm">
+                                    <%= info[i].likes %>
+                                </span>
+                                <span class='fa fa-thumbs-up hover:text-indigo-500 cursor-pointer'></span>
+                                <span class='fa fa-trash hover:text-red-500 cursor-pointer'></span>
+                            </div>
+                        </div>
+                        <h1 class="text-gray-500">
+                            <span class="text-indigo-500 font-bold">
+                                Deadline:
+                            </span>
+                            <%= info[i].dueDate %> 
+                        </h1>
+                    </div>
+                        
+                        
+            <% } %>
+                        
+                        
+                        
+        </div>
+                        
+    </section>
+                    
+    <section class="w-full md:w-80">
+        <h1 class="text-3xl font-bold text-indigo-800">Add a Task: </h1>
+        <form action="/addTask" method="POST"class="bg-white flex flex-col p-3 rounded-xl shadow-xl">
+            <input class='mt-4 pt-1 pb-1' type="text" placeholder="Task Title" name="taskTitle">
+            <input class='mt-4 pt-1 pb-1' type="text" placeholder="Task Type (research, dev, ui...) " name="taskType">
+            <textarea class='mt-4 pt-1 pb-1' type="text" placeholder="Task Desciription" name="taskDescription"></textarea>
+            <input class='mt-4 pt-1 pb-1' type="text" placeholder="Employees" name="employees">
+            <input class='mt-4 pt-1 pb-1' type="file" name="documents">
+            <label class='mt-4' for="dueDate">Due Date: </label>
+            <input type="date" name="dueDate" >
+            <input type="submit" class="mt-4 pt-2 pb-2 text-lg bg-indigo-500 text-white font-bold rounded-md cursor-pointer hover:bg-white hover:text-indigo-500 border-2 border-indigo-500">
+
+        </form>
+    </section>
+
+    
+
+    <script src="/main.js"></script>
+</body>
+</html>
